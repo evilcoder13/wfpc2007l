@@ -1,0 +1,13 @@
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\bin\Debug\demoT4WebAPIClient.exe.config
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\bin\Debug\demoT4WebAPIClient.exe
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\bin\Debug\demoT4WebAPIClient.pdb
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.csprojAssemblyReference.cache
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.Form1.resources
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.Properties.Resources.resources
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.csproj.GenerateResource.cache
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.csproj.CoreCompileInputs.cache
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.exe
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.pdb
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.csproj.CopyComplete
