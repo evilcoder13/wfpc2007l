@@ -33,5 +33,19 @@ namespace demoT4WebAPIClient
             //WebBrowser
             //System.Net.sock
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string url = string.Format("https://www.omdbapi.com/?s={0}&apikey=5b3098a8", txtSearch.Text);
+            HttpClient client = new HttpClient();
+            string dulieu = client.GetStringAsync(url).Result;
+            SearchMovie ketquatimkiem = Newtonsoft.Json.JsonConvert.DeserializeObject<SearchMovie>(dulieu);
+            MessageBox.Show(string.Format("Tim thay {0} phim thoa man tu khoa {1}", ketquatimkiem.totalResults, txtSearch.Text));
+            //foreach (Search movie in ketquatimkiem.Search) {
+            //    lbMovies.Items.Add(movie);
+            //}
+            lbMovies.DataSource = ketquatimkiem.Search;
+            dgvMovies.DataSource = ketquatimkiem.Search;
+        }
     }
 }
