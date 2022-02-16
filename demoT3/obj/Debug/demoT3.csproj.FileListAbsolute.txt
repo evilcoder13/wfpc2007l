@@ -1,0 +1,12 @@
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\bin\Debug\demoT3.exe.config
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\bin\Debug\demoT3.exe
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\bin\Debug\demoT3.pdb
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.frmAbout.resources
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.frmMainForm.resources
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.Properties.Resources.resources
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.SplashScreen.resources
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.csproj.GenerateResource.cache
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.csproj.CoreCompileInputs.cache
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.exe
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.pdb
+C:\Users\xatm\Desktop\WFPC2007L\demoT3\obj\Debug\demoT3.csprojAssemblyReference.cache

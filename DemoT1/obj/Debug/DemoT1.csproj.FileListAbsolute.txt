@@ -1,0 +1,13 @@
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\bin\Debug\DemoT1.exe.config
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\bin\Debug\DemoT1.exe
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\bin\Debug\DemoT1.pdb
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.csprojAssemblyReference.cache
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.Form1.resources
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.Properties.Resources.resources
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.csproj.GenerateResource.cache
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.csproj.CoreCompileInputs.cache
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.exe
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.pdb
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.frmCalculator.resources
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\bin\Debug\Jace.dll
+C:\Users\xatm\Desktop\WFPC2007L\DemoT1\obj\Debug\DemoT1.csproj.CopyComplete

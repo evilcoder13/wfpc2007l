@@ -1,0 +1,13 @@
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\bin\Debug\DemoT2.exe.config
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\bin\Debug\DemoT2.exe
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\bin\Debug\DemoT2.pdb
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.csprojAssemblyReference.cache
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.BaiTap2.resources
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.Form1.resources
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.Properties.Resources.resources
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.csproj.GenerateResource.cache
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.csproj.CoreCompileInputs.cache
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.exe
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.pdb
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.frmCach2.resources
+C:\Users\xatm\Desktop\WFPC2007L\DemoT2\obj\Debug\DemoT2.frmLyThuyet.resources
