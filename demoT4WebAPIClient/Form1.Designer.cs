@@ -45,10 +45,12 @@ namespace demoT4WebAPIClient
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.lbMovies = new System.Windows.Forms.ListBox();
             this.dgvMovies = new System.Windows.Forms.DataGridView();
+            this.pbSPoster = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSPoster)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -76,7 +78,7 @@ namespace demoT4WebAPIClient
             this.txtWeather.Location = new System.Drawing.Point(7, 68);
             this.txtWeather.Multiline = true;
             this.txtWeather.Name = "txtWeather";
-            this.txtWeather.Size = new System.Drawing.Size(200, 292);
+            this.txtWeather.Size = new System.Drawing.Size(200, 330);
             this.txtWeather.TabIndex = 1;
             // 
             // label1
@@ -100,6 +102,7 @@ namespace demoT4WebAPIClient
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.pbSPoster);
             this.groupBox2.Controls.Add(this.dgvMovies);
             this.groupBox2.Controls.Add(this.lbMovies);
             this.groupBox2.Controls.Add(this.btnSearch);
@@ -174,7 +177,7 @@ namespace demoT4WebAPIClient
             this.textBox3.Location = new System.Drawing.Point(7, 68);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 292);
+            this.textBox3.Size = new System.Drawing.Size(200, 330);
             this.textBox3.TabIndex = 1;
             // 
             // textBox4
@@ -197,8 +200,19 @@ namespace demoT4WebAPIClient
             this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMovies.Location = new System.Drawing.Point(9, 164);
             this.dgvMovies.Name = "dgvMovies";
-            this.dgvMovies.Size = new System.Drawing.Size(198, 196);
+            this.dgvMovies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMovies.Size = new System.Drawing.Size(198, 131);
             this.dgvMovies.TabIndex = 5;
+            this.dgvMovies.SelectionChanged += new System.EventHandler(this.dgvMovies_SelectionChanged);
+            // 
+            // pbSPoster
+            // 
+            this.pbSPoster.Location = new System.Drawing.Point(9, 302);
+            this.pbSPoster.Name = "pbSPoster";
+            this.pbSPoster.Size = new System.Drawing.Size(198, 96);
+            this.pbSPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSPoster.TabIndex = 6;
+            this.pbSPoster.TabStop = false;
             // 
             // Form1
             // 
@@ -217,6 +231,7 @@ namespace demoT4WebAPIClient
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSPoster)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,6 +254,7 @@ namespace demoT4WebAPIClient
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.PictureBox pbSPoster;
     }
 }
 

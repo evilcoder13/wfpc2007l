@@ -47,5 +47,12 @@ namespace demoT4WebAPIClient
             lbMovies.DataSource = ketquatimkiem.Search;
             dgvMovies.DataSource = ketquatimkiem.Search;
         }
+
+        private void dgvMovies_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvMovies.SelectedRows.Count <= 0) return;
+            Search movie = (Search)dgvMovies.SelectedRows[0].DataBoundItem;
+            pbSPoster.ImageLocation = movie.Poster;
+        }
     }
 }
