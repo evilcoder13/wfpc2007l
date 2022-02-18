@@ -71,6 +71,7 @@ namespace demoT4WebAPIClient
                 frm = new frmPicture();
             }
             frm.Show();
+            if (this.MdiParent != null) frm.MdiParent = this.MdiParent;
             frm.HienThiAnh(movie.Poster);
             this.Focus();
         }
@@ -91,6 +92,11 @@ namespace demoT4WebAPIClient
             {
                 txtDetailMovie.Text = dulieu;
             }
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
