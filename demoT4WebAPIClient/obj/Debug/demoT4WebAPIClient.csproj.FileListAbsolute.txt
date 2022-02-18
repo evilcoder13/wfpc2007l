@@ -11,3 +11,4 @@ C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.
 C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\bin\Debug\Newtonsoft.Json.dll
 C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\bin\Debug\Newtonsoft.Json.xml
 C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.csproj.CopyComplete
+C:\Users\xatm\Desktop\WFPC2007L\demoT4WebAPIClient\obj\Debug\demoT4WebAPIClient.frmPicture.resources

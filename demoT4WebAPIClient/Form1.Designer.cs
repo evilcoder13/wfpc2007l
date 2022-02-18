@@ -30,27 +30,27 @@ namespace demoT4WebAPIClient
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtArea = new System.Windows.Forms.TextBox();
-            this.txtWeather = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnViewWeather = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtWeather = new System.Windows.Forms.TextBox();
+            this.txtArea = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pbSPoster = new System.Windows.Forms.PictureBox();
+            this.dgvMovies = new System.Windows.Forms.DataGridView();
+            this.lbMovies = new System.Windows.Forms.ListBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.lbMovies = new System.Windows.Forms.ListBox();
-            this.dgvMovies = new System.Windows.Forms.DataGridView();
-            this.pbSPoster = new System.Windows.Forms.PictureBox();
+            this.txtDetailMovie = new System.Windows.Forms.TextBox();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Poster = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSPoster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -66,20 +66,15 @@ namespace demoT4WebAPIClient
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Weather";
             // 
-            // txtArea
+            // btnViewWeather
             // 
-            this.txtArea.Location = new System.Drawing.Point(58, 36);
-            this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(100, 20);
-            this.txtArea.TabIndex = 0;
-            // 
-            // txtWeather
-            // 
-            this.txtWeather.Location = new System.Drawing.Point(7, 68);
-            this.txtWeather.Multiline = true;
-            this.txtWeather.Name = "txtWeather";
-            this.txtWeather.Size = new System.Drawing.Size(200, 330);
-            this.txtWeather.TabIndex = 1;
+            this.btnViewWeather.Location = new System.Drawing.Point(165, 32);
+            this.btnViewWeather.Name = "btnViewWeather";
+            this.btnViewWeather.Size = new System.Drawing.Size(42, 23);
+            this.btnViewWeather.TabIndex = 3;
+            this.btnViewWeather.Text = "Xem";
+            this.btnViewWeather.UseVisualStyleBackColor = true;
+            this.btnViewWeather.Click += new System.EventHandler(this.btnViewWeather_Click);
             // 
             // label1
             // 
@@ -90,15 +85,20 @@ namespace demoT4WebAPIClient
             this.label1.TabIndex = 2;
             this.label1.Text = "Khu vuc";
             // 
-            // btnViewWeather
+            // txtWeather
             // 
-            this.btnViewWeather.Location = new System.Drawing.Point(165, 32);
-            this.btnViewWeather.Name = "btnViewWeather";
-            this.btnViewWeather.Size = new System.Drawing.Size(42, 23);
-            this.btnViewWeather.TabIndex = 3;
-            this.btnViewWeather.Text = "Xem";
-            this.btnViewWeather.UseVisualStyleBackColor = true;
-            this.btnViewWeather.Click += new System.EventHandler(this.btnViewWeather_Click);
+            this.txtWeather.Location = new System.Drawing.Point(7, 68);
+            this.txtWeather.Multiline = true;
+            this.txtWeather.Name = "txtWeather";
+            this.txtWeather.Size = new System.Drawing.Size(200, 330);
+            this.txtWeather.TabIndex = 1;
+            // 
+            // txtArea
+            // 
+            this.txtArea.Location = new System.Drawing.Point(58, 36);
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(100, 20);
+            this.txtArea.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -114,6 +114,37 @@ namespace demoT4WebAPIClient
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Search Movies";
+            // 
+            // pbSPoster
+            // 
+            this.pbSPoster.Location = new System.Drawing.Point(9, 302);
+            this.pbSPoster.Name = "pbSPoster";
+            this.pbSPoster.Size = new System.Drawing.Size(198, 96);
+            this.pbSPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSPoster.TabIndex = 6;
+            this.pbSPoster.TabStop = false;
+            // 
+            // dgvMovies
+            // 
+            this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMovies.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Title,
+            this.Year,
+            this.Poster});
+            this.dgvMovies.Location = new System.Drawing.Point(9, 164);
+            this.dgvMovies.Name = "dgvMovies";
+            this.dgvMovies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgvMovies.Size = new System.Drawing.Size(198, 131);
+            this.dgvMovies.TabIndex = 5;
+            this.dgvMovies.SelectionChanged += new System.EventHandler(this.dgvMovies_SelectionChanged);
+            // 
+            // lbMovies
+            // 
+            this.lbMovies.FormattingEnabled = true;
+            this.lbMovies.Location = new System.Drawing.Point(9, 62);
+            this.lbMovies.Name = "lbMovies";
+            this.lbMovies.Size = new System.Drawing.Size(198, 95);
+            this.lbMovies.TabIndex = 4;
             // 
             // btnSearch
             // 
@@ -143,10 +174,7 @@ namespace demoT4WebAPIClient
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.textBox3);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.txtDetailMovie);
             this.groupBox3.Location = new System.Drawing.Point(452, 18);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(213, 404);
@@ -154,65 +182,33 @@ namespace demoT4WebAPIClient
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detail Movie";
             // 
-            // button2
+            // txtDetailMovie
             // 
-            this.button2.Location = new System.Drawing.Point(165, 32);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(42, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Xem";
-            this.button2.UseVisualStyleBackColor = true;
+            this.txtDetailMovie.Location = new System.Drawing.Point(7, 32);
+            this.txtDetailMovie.Multiline = true;
+            this.txtDetailMovie.Name = "txtDetailMovie";
+            this.txtDetailMovie.Size = new System.Drawing.Size(200, 366);
+            this.txtDetailMovie.TabIndex = 1;
             // 
-            // label3
+            // Title
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Khu vuc";
+            this.Title.DataPropertyName = "Title";
+            this.Title.HeaderText = "Tieu De";
+            this.Title.Name = "Title";
             // 
-            // textBox3
+            // Year
             // 
-            this.textBox3.Location = new System.Drawing.Point(7, 68);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 330);
-            this.textBox3.TabIndex = 1;
+            this.Year.DataPropertyName = "Year";
+            this.Year.HeaderText = "Nam";
+            this.Year.Name = "Year";
             // 
-            // textBox4
+            // Poster
             // 
-            this.textBox4.Location = new System.Drawing.Point(58, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 0;
-            // 
-            // lbMovies
-            // 
-            this.lbMovies.FormattingEnabled = true;
-            this.lbMovies.Location = new System.Drawing.Point(9, 62);
-            this.lbMovies.Name = "lbMovies";
-            this.lbMovies.Size = new System.Drawing.Size(198, 95);
-            this.lbMovies.TabIndex = 4;
-            // 
-            // dgvMovies
-            // 
-            this.dgvMovies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMovies.Location = new System.Drawing.Point(9, 164);
-            this.dgvMovies.Name = "dgvMovies";
-            this.dgvMovies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMovies.Size = new System.Drawing.Size(198, 131);
-            this.dgvMovies.TabIndex = 5;
-            this.dgvMovies.SelectionChanged += new System.EventHandler(this.dgvMovies_SelectionChanged);
-            // 
-            // pbSPoster
-            // 
-            this.pbSPoster.Location = new System.Drawing.Point(9, 302);
-            this.pbSPoster.Name = "pbSPoster";
-            this.pbSPoster.Size = new System.Drawing.Size(198, 96);
-            this.pbSPoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSPoster.TabIndex = 6;
-            this.pbSPoster.TabStop = false;
+            this.Poster.DataPropertyName = "Poster";
+            this.Poster.HeaderText = "Hinh Anh";
+            this.Poster.Name = "Poster";
+            this.Poster.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Poster.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Form1
             // 
@@ -228,10 +224,10 @@ namespace demoT4WebAPIClient
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSPoster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMovies)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSPoster)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -250,11 +246,11 @@ namespace demoT4WebAPIClient
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDetailMovie;
         private System.Windows.Forms.PictureBox pbSPoster;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Year;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Poster;
     }
 }
 

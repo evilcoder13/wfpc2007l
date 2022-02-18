@@ -45,14 +45,52 @@ namespace demoT4WebAPIClient
             //    lbMovies.Items.Add(movie);
             //}
             lbMovies.DataSource = ketquatimkiem.Search;
+            dgvMovies.AutoGenerateColumns = false;
             dgvMovies.DataSource = ketquatimkiem.Search;
         }
 
+        frmPicture frm = new frmPicture();
+
         private void dgvMovies_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvMovies.SelectedRows.Count <= 0) return;
-            Search movie = (Search)dgvMovies.SelectedRows[0].DataBoundItem;
+            int selectedRowIndex = -1;
+            if (dgvMovies.SelectedCells.Count > 0)
+            {
+                selectedRowIndex = dgvMovies.SelectedCells[0].RowIndex;
+            }
+            else if (dgvMovies.SelectedRows.Count > 0)
+                selectedRowIndex = dgvMovies.SelectedRows[0].Index;
+            
+            Search movie = (Search)dgvMovies.Rows[selectedRowIndex].DataBoundItem;
+            if (movie == null) return;
+            Task.Run(() => {
+                HienThiChiTietPhim(movie.imdbID);
+            });
             pbSPoster.ImageLocation = movie.Poster;
+            if (frm.IsDisposed) {
+                frm = new frmPicture();
+            }
+            frm.Show();
+            frm.HienThiAnh(movie.Poster);
+            this.Focus();
+        }
+
+        async void HienThiChiTietPhim(string imdbId) {
+            string url = string.Format("https://www.omdbapi.com/?i={0}&apikey=5b3098a8", imdbId);
+            HttpClient client = new HttpClient();
+            string dulieu = client.GetStringAsync(url).Result;
+            
+            if (txtDetailMovie.InvokeRequired)
+            {
+                txtDetailMovie.Invoke(new MethodInvoker(delegate
+                {
+                    txtDetailMovie.Text = dulieu;
+                }));
+            }
+            else
+            {
+                txtDetailMovie.Text = dulieu;
+            }
         }
     }
 }
