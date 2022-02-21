@@ -1,0 +1,12 @@
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\bin\Debug\UserDB.mdf
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\bin\Debug\UserDB_log.ldf
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\bin\Debug\demaT6DatabaseUser.exe.config
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\bin\Debug\demaT6DatabaseUser.exe
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\bin\Debug\demaT6DatabaseUser.pdb
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\obj\Debug\demaT6DatabaseUser.csprojAssemblyReference.cache
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\obj\Debug\demaT6DatabaseUser.Form1.resources
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\obj\Debug\demaT6DatabaseUser.Properties.Resources.resources
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\obj\Debug\demaT6DatabaseUser.csproj.GenerateResource.cache
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\obj\Debug\demaT6DatabaseUser.csproj.CoreCompileInputs.cache
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\obj\Debug\demaT6DatabaseUser.exe
+C:\Users\xatm\Desktop\WFPC2007L\demaT6DatabaseUser\obj\Debug\demaT6DatabaseUser.pdb
