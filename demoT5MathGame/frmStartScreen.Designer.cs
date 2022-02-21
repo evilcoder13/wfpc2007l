@@ -31,6 +31,8 @@ namespace demoT5MathGame
         {
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btn2Player = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +48,7 @@ namespace demoT5MathGame
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.Location = new System.Drawing.Point(289, 244);
+            this.button1.Location = new System.Drawing.Point(182, 204);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 109);
             this.button1.TabIndex = 1;
@@ -54,11 +56,35 @@ namespace demoT5MathGame
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnExit.Location = new System.Drawing.Point(270, 329);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(208, 109);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "EXIT";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btn2Player
+            // 
+            this.btn2Player.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn2Player.Location = new System.Drawing.Point(409, 204);
+            this.btn2Player.Name = "btn2Player";
+            this.btn2Player.Size = new System.Drawing.Size(208, 109);
+            this.btn2Player.TabIndex = 3;
+            this.btn2Player.Text = "2 PLAYER";
+            this.btn2Player.UseVisualStyleBackColor = true;
+            this.btn2Player.Click += new System.EventHandler(this.btn2Player_Click);
+            // 
             // frmStartScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn2Player);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "frmStartScreen";
@@ -72,5 +98,7 @@ namespace demoT5MathGame
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btn2Player;
     }
 }

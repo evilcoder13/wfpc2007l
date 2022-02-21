@@ -19,6 +19,18 @@ namespace demoT5MathGame
 
         private void button1_Click(object sender, EventArgs e)
         {
+            multiPlayer = false;
+            this.Close();
+        }
+        public bool multiPlayer = false;
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn2Player_Click(object sender, EventArgs e)
+        {
+            multiPlayer = true;
             this.Close();
         }
     }

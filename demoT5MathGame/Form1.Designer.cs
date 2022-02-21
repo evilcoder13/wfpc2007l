@@ -34,11 +34,13 @@ namespace demoT5MathGame
             this.txtPhepToan = new System.Windows.Forms.TextBox();
             this.btnTrue = new System.Windows.Forms.Button();
             this.btnFalse = new System.Windows.Forms.Button();
+            this.lblPoint2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(12, 12);
+            this.progressBar1.Maximum = 90;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(776, 23);
             this.progressBar1.TabIndex = 0;
@@ -94,11 +96,24 @@ namespace demoT5MathGame
             this.btnFalse.Click += new System.EventHandler(this.btn_Click);
             this.btnFalse.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             // 
+            // lblPoint2
+            // 
+            this.lblPoint2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPoint2.AutoSize = true;
+            this.lblPoint2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblPoint2.Location = new System.Drawing.Point(698, 76);
+            this.lblPoint2.Name = "lblPoint2";
+            this.lblPoint2.Size = new System.Drawing.Size(90, 20);
+            this.lblPoint2.TabIndex = 5;
+            this.lblPoint2.Text = "Point: 000";
+            this.lblPoint2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPoint2);
             this.Controls.Add(this.btnFalse);
             this.Controls.Add(this.btnTrue);
             this.Controls.Add(this.txtPhepToan);
@@ -120,6 +135,7 @@ namespace demoT5MathGame
         private System.Windows.Forms.TextBox txtPhepToan;
         private System.Windows.Forms.Button btnTrue;
         private System.Windows.Forms.Button btnFalse;
+        private System.Windows.Forms.Label lblPoint2;
     }
 }
 
